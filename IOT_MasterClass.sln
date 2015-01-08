@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_AdminConsole", "MC_AdminConsole\MC_AdminConsole.csproj", "{F4CDC262-8724-458C-AF43-5C8C350C8D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_EventConsumer", "MC_EventConsumer\MC_EventConsumer.csproj", "{EE63ED59-0D52-4483-BEC8-144DC7E36BD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_SensorNetduino", "MC_SensorNetduino\MC_SensorNetduino.csproj", "{6D3A953D-5DC2-4C09-95D6-8559F74311F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_SensorDotNet", "MC_SensorDotNet\MC_SensorDotNet.csproj", "{C644B6C8-F39C-42CE-8FF0-72914418AA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_EventConsumerAnalyse", "MC_EventConsumerAnalyse\MC_EventConsumerAnalyse.csproj", "{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4CDC262-8724-458C-AF43-5C8C350C8D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CDC262-8724-458C-AF43-5C8C350C8D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CDC262-8724-458C-AF43-5C8C350C8D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CDC262-8724-458C-AF43-5C8C350C8D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE63ED59-0D52-4483-BEC8-144DC7E36BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE63ED59-0D52-4483-BEC8-144DC7E36BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE63ED59-0D52-4483-BEC8-144DC7E36BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE63ED59-0D52-4483-BEC8-144DC7E36BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3A953D-5DC2-4C09-95D6-8559F74311F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3A953D-5DC2-4C09-95D6-8559F74311F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3A953D-5DC2-4C09-95D6-8559F74311F9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6D3A953D-5DC2-4C09-95D6-8559F74311F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3A953D-5DC2-4C09-95D6-8559F74311F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3A953D-5DC2-4C09-95D6-8559F74311F9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C644B6C8-F39C-42CE-8FF0-72914418AA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C644B6C8-F39C-42CE-8FF0-72914418AA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C644B6C8-F39C-42CE-8FF0-72914418AA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C644B6C8-F39C-42CE-8FF0-72914418AA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

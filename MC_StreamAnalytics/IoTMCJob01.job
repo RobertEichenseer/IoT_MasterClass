@@ -1,0 +1,10 @@
+CREATE TABLE TelemetryIngest (
+   DeviceId nvarchar(max),
+   Temperature float,
+   Pollution float,
+   Humidity float,
+);
+
+SELECT AVG(Humidity), Count(*) 
+FROM TelemetryIngest 
+GROUP BY TumblingWindow(second,5)
