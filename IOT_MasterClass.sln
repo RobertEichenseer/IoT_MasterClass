@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_SensorDotNet", "MC_Senso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_EventConsumerAnalyse", "MC_EventConsumerAnalyse\MC_EventConsumerAnalyse.csproj", "{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MC_CommandControlFrontEnd", "MC_CommandControlFrontEnd\MC_CommandControlFrontEnd.csproj", "{5208A135-5C45-49B6-A986-EC57C3EB0F2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA83CC2B-A5A4-4843-A70C-D4688A5D5230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5208A135-5C45-49B6-A986-EC57C3EB0F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5208A135-5C45-49B6-A986-EC57C3EB0F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5208A135-5C45-49B6-A986-EC57C3EB0F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5208A135-5C45-49B6-A986-EC57C3EB0F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
