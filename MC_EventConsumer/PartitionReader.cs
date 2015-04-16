@@ -30,7 +30,14 @@ namespace MC_EventConsumer
             EventHubConsumerGroup eventHubConsumerGroup = eventHubClient.GetDefaultConsumerGroup();
 
             EventProcessorHost eventProcessorHost = new EventProcessorHost("MSTechDemoWorker", eventHubClient.Path, eventHubConsumerGroup.GroupName, eventHubConnectionString, storageConnectionString);
-            await eventProcessorHost.RegisterEventProcessorAsync<EventHubEventProcessor>(); 
+            //await eventProcessorHost.RegisterEventProcessorAsync<EventHubEventProcessor>();
+
+            //Ignore older messages even if they are still in the event hub store
+            Task t = eventProcessorHost.RegisterEventProcessorAsync<EventHubEventProcessor>(new EventProcessorOptions()
+            {
+                InitialOffsetProvider = (partitionId) => { return DateTime.UtcNow.AddHours(-1); }
+            });
+            t.Wait();
         }
 
         public void ReadFromEventHubPartition()

@@ -27,15 +27,24 @@ namespace MC_EventConsumer
 
         public async Task ProcessEventsAsync(PartitionContext context, IEnumerable<EventData> messages)
         {
+            EventData lastMessage = new EventData();
+
+            lastMessage = null;
             foreach (EventData eventData in messages)
             {
                 string messageDetails = String.Format("Received: Seq number={0} Offset={1} Partition={2} EnqueueTimeUtc={3} Message={4}",
                                 eventData.SequenceNumber,
                                 eventData.Offset,
                                 eventData.PartitionKey,
-                                eventData.EnqueuedTimeUtc.ToShortTimeString(),
+                                eventData.EnqueuedTimeUtc.ToUniversalTime(),
                                 Encoding.UTF8.GetString(eventData.GetBytes()));
+                lastMessage = eventData;
+                Console.WriteLine(messageDetails);
+
             }
+            if (lastMessage != null)
+                await _partitionContext.CheckpointAsync(lastMessage);
+            //await _partitionContext.CheckpointAsync(); 
         }
     }
 }
