@@ -9,6 +9,9 @@ Creates an Anzure Service Bus Namespace using power shell scripting.
  
 ##### [MC_AdminConsole](MC_AdminConsole/) #####
 Createas an Azure Service Bus EventHub using C# and a console app.
+
+##### [MC_SensorCoreIoT](MC_SensorCoreIoT/) #####
+Example how to use Windows 10 Core IoT to ingest data to EventHub using C# and a Windows Universal App 
  
 ##### [MC_SensorDotNet](MC_SensorDotNet/) #####
 Ingests telemetry data into an EventHub using C#, the Azure Service Bus SDK (Win32)
