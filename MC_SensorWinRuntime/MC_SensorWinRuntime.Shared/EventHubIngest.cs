@@ -24,7 +24,7 @@ namespace MC_SensorWinRuntime
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("SharedAccessSignature", sBToken);
                 HttpContent httpContent = new StringContent(JsonConvert.SerializeObject(telemetry), Encoding.UTF8);
                 httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-
+              
                 string ingestPath = String.Format("/{0}/publishers/device01/messages", eventHubName);
                 var response = await httpClient.PostAsync(ingestPath, httpContent);
                 if (response.IsSuccessStatusCode)
